@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sephora Courtside Luxe Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  
+  <div class="nav-left">
+    <h2>Sephora</h2>
+  </div>
+
+<div class="nav-center">
+  <span class="sponsored">Proudly Sponsored by</span>
+
+  <div class="sponsors">
+    <div class="sponsor">
+      <img src="Images/Golden_State_Warriors_logo.svg.png" alt="Golden State Warriors">
+      <p>Golden State Warriors</p>
+    </div>
+
+    <div class="sponsor">
+      <img src="Images/Sephora_.png" alt="Sephora">
+      <p>Sephora</p>
+    </div>
+  </div>
+</div>
+
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="investment.html">Invest</a>
+    <a href="intro.html">About</a>
+  </div>
+
+</nav>
+
+
+<section class="section">
+  <h1>Investment Opportunity</h1>
+  <p>Join a growing ecosystem of digital travel deals.</p>
+</section>
+
+<section class="beauty-stocks-section">
+  <div class="section-header">
+    <div>
+      <p class="section-label">LIVE MARKET</p>
+      <h2>Sephora Beauty Stocks</h2>
+    </div>
+
+    <div class="market-status">
+      <span class="pulse"></span>
+      Live Charts
+    </div>
+  </div>
+
+  <div class="stocks-grid">
+
+    <!-- LVMH -->
+    <article class="stock-card">
+      <div class="stock-top">
+        <div>
+          <h3>LVMH</h3>
+          <p>Sephora Parent Company</p>
+        </div>
+
+        <span class="ticker">EPA:MC</span>
+      </div>
+
+      <div id="chart-lvmh" class="chart-container"></div>
+    </article>
+
+    <!-- ULTA -->
+    <article class="stock-card">
+      <div class="stock-top">
+        <div>
+          <h3>Ulta Beauty</h3>
+          <p>Beauty Retail Competitor</p>
+        </div>
+
+        <span class="ticker">NASDAQ:ULTA</span>
+      </div>
+
+      <div id="chart-ulta" class="chart-container"></div>
+    </article>
+
+    <!-- ELF -->
+    <article class="stock-card">
+      <div class="stock-top">
+        <div>
+          <h3>e.l.f. Beauty</h3>
+          <p>Beauty Brand</p>
+        </div>
+
+        <span class="ticker">NYSE:ELF</span>
+      </div>
+
+      <div id="chart-elf" class="chart-container"></div>
+    </article>
+
+    <!-- ESTEE -->
+    <article class="stock-card">
+      <div class="stock-top">
+        <div>
+          <h3>Estée Lauder</h3>
+          <p>Luxury Cosmetics</p>
+        </div>
+
+        <span class="ticker">NYSE:EL</span>
+      </div>
+
+      <div id="chart-estee" class="chart-container"></div>
+    </article>
+
+    <!-- COTY -->
+    <article class="stock-card">
+      <div class="stock-top">
+        <div>
+          <h3>Coty</h3>
+          <p>Global Beauty Company</p>
+        </div>
+
+        <span class="ticker">NYSE:COTY</span>
+      </div>
+
+      <div id="chart-coty" class="chart-container"></div>
+    </article>
+
+    <!-- LOREAL -->
+    <article class="stock-card">
+      <div class="stock-top">
+        <div>
+          <h3>L'Oréal</h3>
+          <p>Beauty & Cosmetics</p>
+        </div>
+
+        <span class="ticker">EPA:OR</span>
+      </div>
+
+      <div id="chart-loreal" class="chart-container"></div>
+    </article>
+
+  </div>
+</section>
+<section class="stock-cta">
+
+  <div class="stock-cta-content">
+
+    <p class="stock-cta-label">
+      INVEST WITH US
+    </p>
+
+    <h2>
+      Join Our Beauty Stock Network
+    </h2>
+
+    <p>
+      Get access to premium beauty market insights,
+      live stock movements, and investor opportunities
+      connected to the global cosmetics industry.
+    </p>
+
+     <a href="mailto:youremail@example.com?subject=VIP Fan Experience Reservation" class="btn">
+      Join Now
+    </a>
+
+  </div>
+
+</section>
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+
+<script>
+const stockCharts = [
+  {
+    id: "chart-lvmh",
+    symbol: "EPA:MC"
+  },
+  {
+    id: "chart-ulta",
+    symbol: "NASDAQ:ULTA"
+  },
+  {
+    id: "chart-elf",
+    symbol: "NYSE:ELF"
+  },
+  {
+    id: "chart-estee",
+    symbol: "NYSE:EL"
+  },
+  {
+    id: "chart-coty",
+    symbol: "NYSE:COTY"
+  },
+  {
+    id: "chart-loreal",
+    symbol: "EPA:OR"
+  }
+];
+
+stockCharts.forEach((stock) => {
+  new TradingView.widget({
+    container_id: stock.id,
+    autosize: true,
+    symbol: stock.symbol,
+    interval: "D",
+    timezone: "Etc/UTC",
+    theme: "dark",
+    style: "1",
+    locale: "en",
+    hide_top_toolbar: false,
+    hide_side_toolbar: true,
+    withdateranges: true,
+    allow_symbol_change: false,
+    save_image: false,
+    studies: [],
+    backgroundColor: "#0f172a",
+    gridColor: "rgba(255,255,255,0.06)",
+    toolbar_bg: "#0f172a"
+  });
+});
+</script>
+
+<!-- TRUST SECTION -->
+<section class="trust">
+  <h2>Beauty Trusted by Millions</h2>
+  <p><p>Beauty is yours to define.</p>
+</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    
+    <div>
+      <h3>Sephora Courtside Luxe Experience</h3>
+      <p>Luxury experiences, simplified.</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p><a href="intro.html">About</a></p>
+      <p><a href="investment.html">Invest</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+      <h4>Follow</h4>
+      <p><a href="https://instagram.com" target="https://www.instagram.com/sephora/">Instagram</a></p>
+      <p><a href="https://twitter.com" target="https://x.com/Sephora">Twitter</a></p>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 Sephora Courtside Luxe Experience. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
