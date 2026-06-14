@@ -608,18 +608,19 @@ section {
     margin-bottom: 12px;
   }
 .packages {
-    padding: 40px 16px;
-  }
+  padding-left: 0;
+  padding-right: 0;
+}
+ .package-grid {
+  padding: 0 16px 10px;
+}
 
-  .package-grid {
-    grid-template-columns: 0.8fr;
-    gap: 16px;
-  }
-
-  .package-card {
-    padding: 20px 16px;
-    border-radius: 12px;
-  }
+.package-card {
+  width: 85vw;
+  min-width: 85vw;
+  max-width: 85vw;
+  flex-shrink: 0;
+}
 
   .package-card h3 {
     font-size: 1.2rem;
