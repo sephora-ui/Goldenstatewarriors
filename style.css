@@ -612,13 +612,13 @@ section {
   }
 
   .package-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: 0.8fr;
+    gap: 16px;
   }
 
   .package-card {
-    padding: 22px 18px;
-    border-radius: 14px;
+    padding: 20px 16px;
+    border-radius: 12px;
   }
 
   .package-card h3 {
