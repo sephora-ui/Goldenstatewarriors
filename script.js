@@ -47,7 +47,7 @@ function changeImage() {
 }
 
 // start with active effect
-  changingImage.classList.add("active");
+changingImage.classList.add("active");
 
 // change every 4 seconds
 setInterval(changeImage, 4000);
