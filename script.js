@@ -20,12 +20,12 @@ fadeElements.forEach(el => observer.observe(el));
 // AUTO-CHANGING IMAGE SHOWCASE (WOW FEATURE)
 // =========================
 const images = [
-  "pic 6.JPEG",
-  "pic 2.PNG",
-  "pic 1.JPEG",
-  "pic 3.JPEG",
-  "pic 4.JPEG",
-  "pic 5.JPEG",
+  "pic 6.jpg",
+  "pic 2.png",
+  "pic 1.jpg",
+  "pic 3.jpg",
+  "pic 4.jpg",
+  "pic 5.jpg",
   
 ];
 let imgIndex = 0;
