@@ -47,7 +47,6 @@ function changeImage() {
 }
 
 // start with active effect
-if (changingImage) {
   changingImage.classList.add("active");
 
 // change every 4 seconds
