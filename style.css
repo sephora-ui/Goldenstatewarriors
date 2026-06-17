@@ -562,24 +562,43 @@ section {
     padding: 60px 20px;
   }
 
-  /* CARDS → horizontal swipe cards (clean UX) */
-  .grid,
-  .benefit-grid,
-  .package-grid {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 10px;
-  }
+ .benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
 
-  .card,
-  .benefit,
-  .package-card {
-    min-width: 75%;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-  }
+.benefit {
+  width: 100%;
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.benefit h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.benefit h4 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin: 24px 0 12px;
+}
+
+.benefit p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.benefit li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.benefit hr {
+  margin: 24px 0;
+}
 
   /* SLIDER */
   .slider img {
