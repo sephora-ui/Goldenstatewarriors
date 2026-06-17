@@ -281,7 +281,42 @@ section {
   padding-left: 20px;
   margin: 0;
 }
+.benefit h3 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.2px;
+}
 
+.benefit p {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.6;
+}
+
+.benefit h4 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.benefit li {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.benefit strong {
+  font-weight: 600;
+  color: #000;
+}
 .benefit ul li {
   margin-bottom: 14px;
   line-height: 1.7;
